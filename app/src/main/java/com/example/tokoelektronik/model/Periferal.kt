@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.model
+package com.example.tokoelektronik.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class Periferal(
     @PrimaryKey val id: String,
     val nama: String,
-    val harga: String,
+    val harga: Int,
     val deskripsi: String,
     val jenis: String
 

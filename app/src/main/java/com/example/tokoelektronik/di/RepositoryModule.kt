@@ -1,14 +1,14 @@
-package com.example.TokoElektronik.di
+package com.example.tokoelektronik.di
 
-import com.example.TokoElektronik.networks.KomputerApi
-import com.example.TokoElektronik.networks.PeriferalApi
-import com.example.TokoElektronik.networks.SmartphoneApi
-import com.example.TokoElektronik.persistences.KomputerDao
-import com.example.TokoElektronik.persistences.PeriferalDao
-import com.example.TokoElektronik.persistences.SmartphoneDao
-import com.example.TokoElektronik.repositories.KomputerRepository
-import com.example.TokoElektronik.repositories.PeriferalRepository
-import com.example.TokoElektronik.repositories.SmartphoneRepository
+import com.example.tokoelektronik.networks.KomputerApi
+import com.example.tokoelektronik.networks.PeriferalApi
+import com.example.tokoelektronik.networks.SmartphoneApi
+import com.example.tokoelektronik.persistences.KomputerDao
+import com.example.tokoelektronik.persistences.PeriferalDao
+import com.example.tokoelektronik.persistences.SmartphoneDao
+import com.example.tokoelektronik.repositories.KomputerRepository
+import com.example.tokoelektronik.repositories.PeriferalRepository
+import com.example.tokoelektronik.repositories.SmartphoneRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.screens
+package com.example.tokoelektronik.screens
 
 import androidx.annotation.StringRes
 import androidx.compose.material.icons.Icons
@@ -7,7 +7,7 @@ import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.TokoElektronik.R
+import com.example.tokoelektronik.R
 
 enum class Menu (
     @StringRes val title: Int,

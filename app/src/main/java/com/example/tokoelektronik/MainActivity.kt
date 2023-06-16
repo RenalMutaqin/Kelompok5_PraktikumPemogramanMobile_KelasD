@@ -1,4 +1,4 @@
-package com.example.TokoElektronik
+package com.example.tokoelektronik
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,8 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import dagger.hilt.android.AndroidEntryPoint
-import com.example.TokoElektronik.screens.MainScreen
-import com.example.TokoElektronik.ui.theme.FunctionalComposeTheme
+import com.example.tokoelektronik.screens.MainScreen
+import com.example.tokoelektronik.ui.theme.FunctionalComposeTheme
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

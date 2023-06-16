@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.screens
+package com.example.tokoelektronik.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -21,8 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.example.TokoElektronik.ui.theme.Purple700
-import com.example.TokoElektronik.ui.theme.Teal200
+import com.example.tokoelektronik.ui.theme.Purple700
+import com.example.tokoelektronik.ui.theme.Teal200
 import kotlinx.coroutines.launch
 
 @Composable
@@ -168,11 +168,11 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
 
     if (id != null) {
         LaunchedEffect(scope) {
-            viewModel.loadItem(id) { matkul ->
-                matkul?.let {
-                    kode.value = TextFieldValue(matkul.kode)
-                    nama.value = TextFieldValue(matkul.nama)
-                    sks.value = TextFieldValue(matkul.sks.toString())
+            viewModel.loadItem(id) { komputer ->
+                komputer?.let {
+                    kode.value = TextFieldValue(komputer.id)
+                    nama.value = TextFieldValue(komputer.merk)
+                    sks.value = TextFieldValue(komputer.sks.toString())
                     praktikum.value = TextFieldValue(matkul.praktikum.toString())
                     deskripsi.value = TextFieldValue(matkul.deskripsi)
                 }

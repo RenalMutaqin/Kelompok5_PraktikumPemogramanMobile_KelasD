@@ -1,10 +1,10 @@
-package com.example.TokoElektronik.screens
+package com.example.tokoelektronik.screens
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.TokoElektronik.model.Smartphone
-import com.example.TokoElektronik.repositories.SmartphoneRepository
+import com.example.tokoelektronik.model.Smartphone
+import com.example.tokoelektronik.repositories.SmartphoneRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

@@ -1,11 +1,11 @@
-package com.example.TokoElektronik.di
+package com.example.tokoelektronik.di
 
 import android.app.Application
 import androidx.room.Room
-import com.example.TokoElektronik.persistences.AppDatabase
-import com.example.TokoElektronik.persistences.KomputerDao
-import com.example.TokoElektronik.persistences.PeriferalDao
-import com.example.TokoElektronik.persistences.SmartphoneDao
+import com.example.tokoelektronik.persistences.AppDatabase
+import com.example.tokoelektronik.persistences.KomputerDao
+import com.example.tokoelektronik.persistences.PeriferalDao
+import com.example.tokoelektronik.persistences.SmartphoneDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

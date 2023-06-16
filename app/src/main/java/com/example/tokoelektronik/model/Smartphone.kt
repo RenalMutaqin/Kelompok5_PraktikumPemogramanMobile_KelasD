@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.model
+package com.example.tokoelektronik.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -1,8 +1,8 @@
-package com.example.TokoElektronik.persistences
+package com.example.tokoelektronik.persistences
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.TokoElektronik.model.Periferal
+import com.example.tokoelektronik.model.Periferal
 
 @Dao
 interface PeriferalDao {

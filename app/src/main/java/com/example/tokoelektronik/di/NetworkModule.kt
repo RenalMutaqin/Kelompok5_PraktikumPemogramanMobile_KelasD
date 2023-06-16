@@ -1,9 +1,9 @@
-package com.example.TokoElektronik.di
+package com.example.tokoelektronik.di
 
 import android.content.Context
-import com.example.TokoElektronik.networks.KomputerApi
-import com.example.TokoElektronik.networks.PeriferalApi
-import com.example.TokoElektronik.networks.SmartphoneApi
+import com.example.tokoelektronik.networks.KomputerApi
+import com.example.tokoelektronik.networks.PeriferalApi
+import com.example.tokoelektronik.networks.SmartphoneApi
 import com.skydoves.sandwich.coroutines.CoroutinesResponseCallAdapterFactory
 import dagger.Module
 import dagger.Provides

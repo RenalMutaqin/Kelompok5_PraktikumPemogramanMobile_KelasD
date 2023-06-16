@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.screens
+package com.example.tokoelektronik.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -30,7 +30,7 @@ import com.vanpra.composematerialdialogs.MaterialDialog
 import com.vanpra.composematerialdialogs.message
 import com.vanpra.composematerialdialogs.rememberMaterialDialogState
 import com.vanpra.composematerialdialogs.title
-import com.example.TokoElektronik.model.Smartphone
+import com.example.tokoelektronik.model.Smartphone
 
 @Composable
 fun SmartphoneItem(item: Smartphone, navController:

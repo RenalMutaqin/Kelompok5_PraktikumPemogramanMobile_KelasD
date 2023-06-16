@@ -1,4 +1,4 @@
-package com.example.TokoElektronik
+package com.example.tokoelektronik
 
 import org.junit.Test
 

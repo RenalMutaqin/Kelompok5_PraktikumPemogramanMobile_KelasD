@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.screens
+package com.example.tokoelektronik.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
@@ -15,7 +15,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.TokoElektronik.ui.theme.Purple700
+import com.example.tokoelektronik.ui.theme.Purple700
 import kotlinx.coroutines.launch
 
 @Composable
@@ -118,16 +118,15 @@ fun MainScreen() {
                     title.value = "Home"
                     HomeScreen()
                 }
-//route dosen
                 composable("dosen") {
                     title.value = "Dosen"
-                    DosenScreen(navController = navController,
+                    KomputerScreen(navController = navController,
                         snackbarHostState = scaffoldState.snackbarHostState, modifier =
                         Modifier.padding(innerPadding))
                 }
                 composable("tambah-dosen") {
                     title.value = "Tambah Dosen"
-                    FormDosenScreen(navController =
+                    FormKomputerScreen(navController =
                     navController, modifier = Modifier.padding(innerPadding))
                 }
                 composable("edit-dosen/{id}",
@@ -140,19 +139,19 @@ fun MainScreen() {
                     val id =
                         backStackEntry.arguments?.getString("id")
                             ?: return@composable
-                    FormDosenScreen(navController = navController, id = id, modifier =
+                    FormKomputerScreen(navController = navController, id = id, modifier =
                     Modifier.padding(innerPadding))
                 }
-//route mahasiswa
+//route
                 composable("mahasiswa") {
                     title.value = "Mahasiswa"
-                    MahasiswaScreen(navController = navController,
+                    SmartphoneScreen(navController = navController,
                         snackbarHostState = scaffoldState.snackbarHostState, modifier =
                         Modifier.padding(innerPadding))
                 }
                 composable("tambah-mahasiswa") {
                     title.value = "Tambah Mahasiswa"
-                    FormMahasiswaScreen(navController =
+                    FormSmartphoneScreen(navController =
                     navController, modifier = Modifier.padding(innerPadding))
                 }
                 composable("edit-mahasiswa/{id}",

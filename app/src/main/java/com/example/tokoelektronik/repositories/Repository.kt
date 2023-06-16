@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.repositories
+package com.example.tokoelektronik.repositories
 
 interface Repository {
 }

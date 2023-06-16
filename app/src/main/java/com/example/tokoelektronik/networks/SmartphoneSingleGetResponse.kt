@@ -1,6 +1,6 @@
-package com.example.TokoElektronik.networks
+package com.example.tokoelektronik.networks
 
-import com.example.TokoElektronik.model.Smartphone
+import com.example.tokoelektronik.model.Smartphone
 
 data class SmartphoneSingleGetResponse(
     val data: Smartphone? = null

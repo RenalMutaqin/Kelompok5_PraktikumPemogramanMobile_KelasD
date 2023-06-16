@@ -1,9 +1,9 @@
-package com.example.TokoElektronik.repositories
+package com.example.tokoelektronik.repositories
 
 import com.benasher44.uuid.uuid4
-import com.example.TokoElektronik.model.Komputer
-import com.example.TokoElektronik.networks.KomputerApi
-import com.example.TokoElektronik.persistences.KomputerDao
+import com.example.tokoelektronik.model.Komputer
+import com.example.tokoelektronik.networks.KomputerApi
+import com.example.tokoelektronik.persistences.KomputerDao
 import com.skydoves.sandwich.message
 import com.skydoves.sandwich.suspendOnError
 import com.skydoves.sandwich.suspendOnException

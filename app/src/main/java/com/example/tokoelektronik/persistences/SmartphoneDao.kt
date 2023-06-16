@@ -1,8 +1,8 @@
-package com.example.TokoElektronik.persistences
+package com.example.tokoelektronik.persistences
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.TokoElektronik.model.Smartphone
+import com.example.tokoelektronik.model.Smartphone
 
 @Dao
 interface SmartphoneDao {

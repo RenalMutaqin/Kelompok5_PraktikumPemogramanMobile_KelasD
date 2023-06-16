@@ -1,10 +1,10 @@
-package com.example.TokoElektronik.screens
+package com.example.tokoelektronik.screens
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.TokoElektronik.model.Komputer
-import com.example.TokoElektronik.repositories.KomputerRepository
+import com.example.tokoelektronik.model.Komputer
+import com.example.tokoelektronik.repositories.KomputerRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -37,7 +37,7 @@ class KomputerViewModel @Inject constructor(private val komputerRepository: Komp
     suspend fun insert(
         merk: String,
         jenis: String,
-        harga: String,
+        harga: Int,
         dapat_diupgrade: String,
         spesifikasi: String
         ){

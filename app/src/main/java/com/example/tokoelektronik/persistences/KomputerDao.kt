@@ -1,14 +1,14 @@
-package com.example.TokoElektronik.persistences
+package com.example.tokoelektronik.persistences
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.TokoElektronik.model.Komputer
+import com.example.tokoelektronik.model.Komputer
 
 @Dao
 interface KomputerDao {
     @Query("SELECT * FROM Komputer ORDER BY merk DESC")
     fun loadAll(): LiveData<List<Komputer>>
-    @Query("SELECT * FROM Komputer ORDER BY merl DESC")
+    @Query("SELECT * FROM Komputer ORDER BY merk DESC")
     suspend fun getList(): List<Komputer>
     @Query("SELECT * FROM Komputer WHERE id = :id")
     suspend fun find(id: String): Komputer?

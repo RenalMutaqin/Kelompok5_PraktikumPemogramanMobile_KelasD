@@ -1,9 +1,9 @@
-package com.example.TokoElektronik.repositories
+package com.example.tokoelektronik.repositories
 
 import com.benasher44.uuid.uuid4
-import com.example.TokoElektronik.model.Periferal
-import com.example.TokoElektronik.networks.PeriferalApi
-import com.example.TokoElektronik.persistences.PeriferalDao
+import com.example.tokoelektronik.model.Periferal
+import com.example.tokoelektronik.networks.PeriferalApi
+import com.example.tokoelektronik.persistences.PeriferalDao
 import com.skydoves.sandwich.message
 import com.skydoves.sandwich.suspendOnError
 import com.skydoves.sandwich.suspendOnException
@@ -78,7 +78,7 @@ class PeriferalRepository @Inject constructor(
         onSuccess: (Periferal) -> Unit,
         onError: (Periferal?, String) -> Unit
     ) {
-        val item = Periferal(id, harga, nama, deskripsi, jenis)
+        val item = Periferal(id, nama, harga, deskripsi, jenis)
         dao.insertAll(item)
         api.update(id, item)
 // handle the case when the API request gets a success response.

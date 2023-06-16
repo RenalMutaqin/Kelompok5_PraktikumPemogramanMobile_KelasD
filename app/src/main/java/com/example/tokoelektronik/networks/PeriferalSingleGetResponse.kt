@@ -1,6 +1,6 @@
-package com.example.TokoElektronik.networks
+package com.example.tokoelektronik.networks
 
-import com.example.TokoElektronik.model.Periferal
+import com.example.tokoelektronik.model.Periferal
 
 data class PeriferalSingleGetResponse(
     val data: Periferal? = null

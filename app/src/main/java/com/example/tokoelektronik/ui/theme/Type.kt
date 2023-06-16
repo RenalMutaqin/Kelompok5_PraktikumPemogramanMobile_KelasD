@@ -1,4 +1,4 @@
-package com.example.TokoElektronik.ui.theme
+package com.example.tokoelektronik.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

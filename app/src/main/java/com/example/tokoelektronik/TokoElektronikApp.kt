@@ -1,4 +1,4 @@
-package com.example.TokoElektronik
+package com.example.tokoelektronik
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
