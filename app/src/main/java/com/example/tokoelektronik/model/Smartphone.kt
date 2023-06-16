@@ -8,7 +8,7 @@ data class Smartphone(
     @PrimaryKey val id : String,
     val model : String,
     val warna : String,
-    val storage : Int,
-    val tanggal_rilis : Int,
+    val storage : String,
+    val tanggal_rilis : String,
     val sistem_operasi : String
 )

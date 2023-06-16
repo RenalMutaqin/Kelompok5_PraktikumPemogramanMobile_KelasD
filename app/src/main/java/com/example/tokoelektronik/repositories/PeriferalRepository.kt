@@ -44,7 +44,7 @@ class PeriferalRepository @Inject constructor(
     }
     suspend fun insert(
         nama: String,
-        harga: Int,
+        harga: String,
         deskripsi: String,
         jenis: String,
         onSuccess: (Periferal) -> Unit,
@@ -72,7 +72,7 @@ class PeriferalRepository @Inject constructor(
     suspend fun update(
         id: String,
         nama: String,
-        harga: Int,
+        harga: String,
         deskripsi: String,
         jenis: String,
         onSuccess: (Periferal) -> Unit,

@@ -37,8 +37,8 @@ class KomputerViewModel @Inject constructor(private val komputerRepository: Komp
     suspend fun insert(
         merk: String,
         jenis: String,
-        harga: Int,
-        dapat_diupgrade: Boolean,
+        harga: String,
+        dapat_diupgrade: String,
         spesifikasi: String
         ){
         _isLoading.postValue(true)
@@ -63,8 +63,8 @@ class KomputerViewModel @Inject constructor(private val komputerRepository: Komp
         id: String,
         merk: String,
         jenis: String,
-        harga:  Int,
-        dapat_diupgrade: Boolean,
+        harga:  String,
+        dapat_diupgrade: String,
         spesifikasi: String
         ){
         _isLoading.postValue(true)

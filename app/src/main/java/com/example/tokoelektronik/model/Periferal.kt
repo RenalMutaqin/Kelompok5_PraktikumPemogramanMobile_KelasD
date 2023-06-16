@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 data class Periferal(
     @PrimaryKey val id: String,
     val nama: String,
-    val harga: Int,
+    val harga: String,
     val deskripsi: String,
     val jenis: String
 

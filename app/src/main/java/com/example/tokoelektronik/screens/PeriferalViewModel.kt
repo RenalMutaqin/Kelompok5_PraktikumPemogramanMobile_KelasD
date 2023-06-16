@@ -36,7 +36,7 @@ class PeriferalViewModel @Inject constructor(private val periferalRepository: Pe
     }
     suspend fun insert(
             nama: String,
-            harga: Int,
+            harga: String,
             deskripsi: String,
             jenis : String
         ){
@@ -61,7 +61,7 @@ class PeriferalViewModel @Inject constructor(private val periferalRepository: Pe
     suspend fun update(
             id: String,
             nama: String,
-            harga: Int,
+            harga: String,
             deskripsi: String,
             jenis : String
         ){

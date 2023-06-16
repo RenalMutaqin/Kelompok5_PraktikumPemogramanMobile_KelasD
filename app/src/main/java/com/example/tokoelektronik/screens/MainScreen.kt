@@ -84,9 +84,9 @@ fun MainScreen() {
         },
         scaffoldState = scaffoldState,
         snackbarHost = {
-// reuse default SnackbarHost to have default  animation and timing handling
+        // reuse default SnackbarHost to have default  animation and timing handling
             SnackbarHost(it) { data ->
-// custom snackbar with the custom colors
+                // custom snackbar with the custom colors
                 Snackbar(
                     actionColor = Color.Green,
                     contentColor = Color.White,
@@ -151,7 +151,7 @@ fun MainScreen() {
                 }
                 composable("tambah-smarthpone") {
                     title.value = "Tambah smartphone"
-                    Forms(navController =
+                    FormSmartphoneScreen(navController =
                     navController, modifier = Modifier.padding(innerPadding))
                 }
                 composable("edit-mahasiswa/{id}",
@@ -170,7 +170,7 @@ fun MainScreen() {
 //                route matkul
                 composable("matkul") {
                     title.value = "Matakuliah"
-                    FormSmartphoneScreen(navController = navController,
+                    SmartphoneScreen(navController = navController,
                         snackbarHostState = scaffoldState.snackbarHostState, modifier =
                         Modifier.padding(innerPadding))
                 }

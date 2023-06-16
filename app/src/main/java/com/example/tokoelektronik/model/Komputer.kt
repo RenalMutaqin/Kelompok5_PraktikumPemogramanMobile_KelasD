@@ -8,8 +8,8 @@ data class Komputer (
     @PrimaryKey val id: String,
     val merk: String,
     val jenis: String,
-    val harga: Int,
-    val dapat_diupgrade: Boolean,
+    val harga: String,
+    val dapat_diupgrade: String,
     val spesifikasi : String
 )
 

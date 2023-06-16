@@ -45,8 +45,8 @@ class KomputerRepository @Inject constructor(
     suspend fun insert(
         merk : String,
         jenis : String,
-        harga : Int,
-        dapat_diupgrade : Boolean,
+        harga : String,
+        dapat_diupgrade : String,
         spesifikasi : String,
 
         onSuccess: (Komputer) -> Unit,
@@ -75,8 +75,8 @@ class KomputerRepository @Inject constructor(
         id : String,
         merk : String,
         jenis : String,
-        harga : Int,
-        dapat_diupgrade : Boolean,
+        harga : String,
+        dapat_diupgrade : String,
         spesifikasi : String,
 
         onSuccess: (Komputer) -> Unit,

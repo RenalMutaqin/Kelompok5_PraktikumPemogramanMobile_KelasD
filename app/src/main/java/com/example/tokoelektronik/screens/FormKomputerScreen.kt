@@ -178,7 +178,7 @@ fun FormKomputerScreen(navController : NavHostController, id: String? = null, mo
                     merk.value = TextFieldValue(komputer.merk)
                     jenis.value = TextFieldValue(komputer.jenis)
                     harga.value = TextFieldValue(komputer.harga)
-                    dapat_diupgrade.value = TextFieldValue(komputer.dapat_diupgrade)
+                    dapat_diupgrade.value = TextFieldValue(komputer.dapat_diupgrade.toString())
                     spesifikasi.value = TextFieldValue(komputer.spesifikasi)
                 }
             }
