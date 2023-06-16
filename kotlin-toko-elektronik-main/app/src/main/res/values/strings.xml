@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cloudtech</string>
+    <string name="pengelolaan_smartphone">Pengelolaan Smartphone</string>
+    <string name="pengelolaan_komputer">Pengelolaan Komputer</string>
+    <string name="pengelolaan_periferal">Pengelolaan Periferal</string>
+    <string name="about">About</string>
+</resources>

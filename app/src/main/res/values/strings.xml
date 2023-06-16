@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Toko Elektronik</string>
-    <string name="home">Home</string>
-    <string name="komputer">Komputer</string>
-    <string name="periferal">Periferal</string>
-    <string name="smartphone">Smartphone</string>
-</resources>
