@@ -30,7 +30,7 @@ import com.vanpra.composematerialdialogs.MaterialDialog
 import com.vanpra.composematerialdialogs.message
 import com.vanpra.composematerialdialogs.rememberMaterialDialogState
 import com.vanpra.composematerialdialogs.title
-import com.example.TokoElektronik.model.Periferal
+import com.example.tokoelektronik.model.Periferal
 
 @Composable
 fun PeriferalItem(item: Periferal, navController: NavHostController, onDelete: (String) -> Unit) {

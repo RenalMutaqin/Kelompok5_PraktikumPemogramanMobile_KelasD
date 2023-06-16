@@ -38,7 +38,7 @@ class KomputerViewModel @Inject constructor(private val komputerRepository: Komp
         merk: String,
         jenis: String,
         harga: Int,
-        dapat_diupgrade: String,
+        dapat_diupgrade: Boolean,
         spesifikasi: String
         ){
         _isLoading.postValue(true)
@@ -63,8 +63,8 @@ class KomputerViewModel @Inject constructor(private val komputerRepository: Komp
         id: String,
         merk: String,
         jenis: String,
-        harga: String,
-        dapat_diupgrade: String,
+        harga:  Int,
+        dapat_diupgrade: Boolean,
         spesifikasi: String
         ){
         _isLoading.postValue(true)

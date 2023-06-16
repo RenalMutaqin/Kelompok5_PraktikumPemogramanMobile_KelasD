@@ -149,9 +149,9 @@ fun MainScreen() {
                         snackbarHostState = scaffoldState.snackbarHostState, modifier =
                         Modifier.padding(innerPadding))
                 }
-                composable("tambah-mahasiswa") {
-                    title.value = "Tambah Mahasiswa"
-                    FormSmartphoneScreen(navController =
+                composable("tambah-smarthpone") {
+                    title.value = "Tambah smartphone"
+                    Forms(navController =
                     navController, modifier = Modifier.padding(innerPadding))
                 }
                 composable("edit-mahasiswa/{id}",
@@ -164,19 +164,19 @@ fun MainScreen() {
                     val id =
                         backStackEntry.arguments?.getString("id")
                             ?: return@composable
-                    FormMahasiswaScreen(navController = navController, id = id, modifier =
+                    FormKomputerScreen(navController = navController, id = id, modifier =
                     Modifier.padding(innerPadding))
                 }
 //                route matkul
                 composable("matkul") {
                     title.value = "Matakuliah"
-                    MatkulScreen(navController = navController,
+                    FormSmartphoneScreen(navController = navController,
                         snackbarHostState = scaffoldState.snackbarHostState, modifier =
                         Modifier.padding(innerPadding))
                 }
                 composable("tambah-matkul") {
                     title.value = "Tambah Matakuliah"
-                    FormMatkulScreen(navController =
+                    FormSmartphoneScreen(navController =
                     navController, modifier = Modifier.padding(innerPadding))
                 }
                 composable("edit-matkul/{id}",
@@ -189,7 +189,7 @@ fun MainScreen() {
                     val id =
                         backStackEntry.arguments?.getString("id")
                             ?: return@composable
-                    FormMatkulScreen(navController = navController, id = id, modifier =
+                    FormSmartphoneScreen(navController = navController, id = id, modifier =
                     Modifier.padding(innerPadding))
                 }
             }

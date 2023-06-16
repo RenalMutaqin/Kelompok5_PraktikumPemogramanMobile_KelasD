@@ -26,13 +26,13 @@ import com.example.tokoelektronik.ui.theme.Teal200
 import kotlinx.coroutines.launch
 
 @Composable
-fun FormMatkulScreen(navController : NavHostController, id: String? = null, modifier: Modifier = Modifier) {
+fun FormSmartphoneScreen(navController : NavHostController, id: String? = null, modifier: Modifier = Modifier) {
     val viewModel = hiltViewModel<SmartphoneViewModel>()
-    val kode = remember { mutableStateOf(TextFieldValue("")) }
-    val nama = remember { mutableStateOf(TextFieldValue("")) }
-    val sks = remember { mutableStateOf(TextFieldValue("")) }
-    val praktikum = remember { mutableStateOf(TextFieldValue("")) }
-    val deskripsi = remember { mutableStateOf(TextFieldValue("")) }
+    val model = remember { mutableStateOf(TextFieldValue("")) }
+    val warna = remember { mutableStateOf(TextFieldValue("")) }
+    val storage = remember { mutableStateOf(TextFieldValue("")) }
+    val tanggal_rilis = remember { mutableStateOf(TextFieldValue("")) }
+    val sistem_operasi = remember { mutableStateOf(TextFieldValue("")) }
     val scope = rememberCoroutineScope()
     val isLoading = remember { mutableStateOf(false) }
     val buttonLabel = if (isLoading.value) "Mohon tunggu..." else "Simpan"
@@ -41,9 +41,9 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
         .fillMaxWidth()) {
         OutlinedTextField(
             label = { Text(text = "Kode") },
-            value = kode.value,
+            value = model.value,
             onValueChange = {
-                kode.value = it
+                model.value = it
             },
             modifier = Modifier
                 .padding(4.dp)
@@ -52,9 +52,9 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
         )
         OutlinedTextField(
             label = { Text(text = "Nama") },
-            value = nama.value,
+            value = warna.value,
             onValueChange = {
-                nama.value = it
+                warna.value = it
             },
             modifier = Modifier
                 .padding(4.dp)
@@ -65,9 +65,9 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
         )
         OutlinedTextField(
             label = { Text(text = "SKS") },
-            value = sks.value,
+            value = storage.value,
             onValueChange = {
-                sks.value = it
+                storage.value = it
             },
             modifier = Modifier
                 .padding(4.dp)
@@ -79,9 +79,9 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
 
         OutlinedTextField(
             label = { Text(text = "Praktikum") },
-            value = praktikum.value,
+            value = tanggal_rilis.value,
             onValueChange = {
-                praktikum.value = it
+                tanggal_rilis.value = it
             },
             modifier = Modifier
                 .padding(4.dp)
@@ -91,9 +91,9 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
 
         OutlinedTextField(
             label = { Text(text = "Deskrpsi") },
-            value = deskripsi.value,
+            value = sistem_operasi.value,
             onValueChange = {
-                deskripsi.value = it
+                sistem_operasi.value = it
             },
             modifier = Modifier
                 .padding(4.dp)
@@ -116,22 +116,22 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
                 if (id == null) {
                     scope.launch {
                         viewModel.insert(
-                            kode.value.text,
-                            nama.value.text,
-                            sks.value.text.toInt(),
-                            praktikum.value.text.toInt(),
-                            deskripsi.value.text
+                            model.value.text,
+                            warna.value.text,
+                            storage.value.text.toInt(),
+                            tanggal_rilis.value.text.toInt(),
+                            sistem_operasi.value.text
                         )
                     }
                 } else {
                     scope.launch {
                         viewModel.update(
                             id,
-                            kode.value.text,
-                            nama.value.text,
-                            sks.value.text.toInt(),
-                            praktikum.value.text.toInt(),
-                            deskripsi.value.text
+                            model.value.text,
+                            warna.value.text,
+                            storage.value.text.toInt(),
+                            tanggal_rilis.value.text.toInt(),
+                            sistem_operasi.value.text
                         )
                     }
                 }
@@ -146,11 +146,11 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
                 )
             }
             Button(modifier = Modifier.weight(5f), onClick = {
-                kode.value = TextFieldValue("")
-                nama.value = TextFieldValue("")
-                sks.value = TextFieldValue("")
-                praktikum.value = TextFieldValue("")
-                deskripsi.value = TextFieldValue("")
+                model.value = TextFieldValue("")
+                warna.value = TextFieldValue("")
+                storage.value = TextFieldValue("")
+                tanggal_rilis.value = TextFieldValue("")
+                sistem_operasi.value = TextFieldValue("")
             }, colors = resetButtonColors) {
                 Text(
                     text = "Reset",
@@ -168,13 +168,13 @@ fun FormMatkulScreen(navController : NavHostController, id: String? = null, modi
 
     if (id != null) {
         LaunchedEffect(scope) {
-            viewModel.loadItem(id) { komputer ->
-                komputer?.let {
-                    kode.value = TextFieldValue(komputer.id)
-                    nama.value = TextFieldValue(komputer.merk)
-                    sks.value = TextFieldValue(komputer.sks.toString())
-                    praktikum.value = TextFieldValue(matkul.praktikum.toString())
-                    deskripsi.value = TextFieldValue(matkul.deskripsi)
+            viewModel.loadItem(id) { smartphone ->
+                smartphone?.let {
+                    model.value = TextFieldValue(smartphone.model)
+                    warna.value = TextFieldValue(smartphone.warna)
+                    storage.value = TextFieldValue(smartphone.storage.toString())
+                    tanggal_rilis.value = TextFieldValue(smartphone.tanggal_rilis.toString())
+                    sistem_operasi.value = TextFieldValue(smartphone.sistem_operasi)
                 }
             }
         }

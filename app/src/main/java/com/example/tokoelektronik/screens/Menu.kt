@@ -7,7 +7,7 @@ import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.tokoelektronik.R
+import com.example.TokoElektronik.R
 
 enum class Menu (
     @StringRes val title: Int,
@@ -17,14 +17,14 @@ enum class Menu (
     HOME(R.string.home, Icons.Default.Home, "home"),
     KOMPUTER("Komputer".komputer, Icons.Default.Person, "komputer"),
     PERIFERAL("Periferal".periferal, Icons.Default.AccountBox, "periferal"),
-    SMARTPHONE("Smartphone".smartphone, Icons.Default.Email, "smartphoone");
+    SMARTPHONE("Smartphone".smartphone, Icons.Default.Email, "smartphone");
 
     companion object {
         fun getTabFromResource(@StringRes resource: Int) : Menu
         {
             return when (resource) {
                 R.string.home -> HOME
-                "Komputer" -> KOMPUTER
+                "komputer" -> KOMPUTER
                 "Periferal" -> PERIFERAL
                 else -> SMARTPHONE
             }
