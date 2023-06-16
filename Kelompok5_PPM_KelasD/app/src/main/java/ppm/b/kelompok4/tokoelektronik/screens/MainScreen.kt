@@ -140,7 +140,7 @@ fun MainScreen() {
                 startDestination = "pengelolaan-komputer") {
 
                 composable("about") {
-                    title.value = "About Cloudtech"
+                    title.value = "About Us"
                     AboutScreen(modifier = Modifier.padding(innerPadding))
                 }
 

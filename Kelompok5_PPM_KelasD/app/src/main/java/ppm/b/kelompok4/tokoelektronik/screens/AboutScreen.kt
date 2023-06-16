@@ -17,11 +17,7 @@ fun AboutScreen(modifier: Modifier = Modifier) {
     Column(modifier = modifier
         .fillMaxWidth()
         .fillMaxHeight()) {
-        Box(modifier = Modifier.align(Alignment.CenterHorizontally)) {
-            Image(
-                painter = painterResource(id = R.drawable.cloudtechlogo),
-                contentDescription = "logo")
-        }
+
         Column(modifier = Modifier.fillMaxWidth()) {
             Text(
                 text="Created By",
